@@ -1,12 +1,16 @@
 public class SphereVolume implements ISubscriber {
 
-	public void notifySubscriber(String input) {
+    public double spherevolume(String r) {
+    	
+    	double radius=Integer.parseInt(r);
+    	double volume = (4*22*radius*radius*radius)/(3*7);
+    	return volume;
+    }
 
-		double radius=Integer.parseInt(input);
-
-
-		double Volume= (4*22*radius*radius*radius)/(3*7);
-		System.out.println(Volume);
-	}
-
+    public void notifySubscriber (String input) {
+        
+    	System.out.println("Sphere Volume is: " + spherevolume(input));
+    }
+    
+    
 }

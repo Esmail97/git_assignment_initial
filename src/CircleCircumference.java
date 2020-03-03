@@ -1,5 +1,3 @@
-package swassignment;
-
 public class CircleCircumference implements ISubscriber {
     public CircleCircumference() {
     }
